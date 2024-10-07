@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const img = document.createElement("img");
+      const div = document.createElement("div");
+      document.body.append(div);
+      div.append(img);
+      img.src = "1.jpg";
+      img.width = 240;
+      img.classList.add("super");
+      img.classList.add("super2");
+      img.alt = "Super man";
+
+      div.appendChild(img);
+
+      const elemHTML = `
+      <div class='pDiv'>
+          <p>Параграф 1</p>
+          <p>Параграф 2</p>
+      </div>`;
+
+      // const ulList = div.querySelector("ul");
+      // ulList.insertAdjacentHTML("beforebegin", elemHTML);
+    </script>
+  </body>
+</html>

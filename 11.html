@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    .wrapper{
+        width: 500px;
+        height: 500px;
+        background-color: rgb(161, 116, 29);
+    }
+</style>
+
+    <script>
+        const div = document.createElement("div");
+        div.className = "wrapper";
+        document.body.append (div);
+        const ulList = document.createElement("ul"); 
+        document.body.append (ulList);
+         const h1 = document.createElement("h1");
+         h1.textContent = "Print";
+         div.append(h1);  
+         const li1 = document.createElement("li");
+         const li2 = document.createElement("li");
+         const li3 = document.createElement("li");
+         li1.textContent = "один"; 
+         li2.textContent = "два";
+         li3.textContent = "три";
+         ulList.append(li1,li2,li3);
+    </script>
+</body>
+</html>
